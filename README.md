@@ -1,6 +1,39 @@
+## 🚀Featured In
 
-```markdown
-# Hacktoberfest 2024: Beginner Coding Problems and Solutions
+<table>
+
+   <tr>
+      <th>Event Logo</th>
+      <th>Event Name</th>
+      <th>Event Description</th>
+   </tr>
+    <tr>
+      <td><img src="HACKTOBERFEST.jpg" width="200" height="auto" loading="lazy" alt="Hacktoberfest 2024"/></td>
+      <td>Hacktoberfest 2024</td>
+      <td>Hacktoberfest is a month-long celebration of open source software run by DigitalOcean, GitHub, and Twilio. It encourages contributions to open source projects and promotes a global community of developers.</td>
+   </tr>
+
+</table>
+
+## Table of Contents
+
+1. [Hacktoberfest 2024: Beginner Coding Problems and Solutions](#hacktoberfest-2024-beginner-coding-problems-and-solutions)
+2. [How to Get Started](#how-to-get-started)
+   - [Step 1: Fork This Repository](#step-1-fork-this-repository)
+   - [Step 2: Clone the Repository](#step-2-clone-the-repository)
+   - [Step 3: Create a New Branch](#step-3-create-a-new-branch)
+   - [Step 4: Make Your Changes](#step-4-make-your-changes)
+   - [Step 5: Commit Your Changes](#step-5-commit-your-changes)
+   - [Step 6: Push Your Changes](#step-6-push-your-changes)
+   - [Step 7: Open a Pull Request](#step-7-open-a-pull-request)
+   - [Step 8: Wait for Review](#step-8-wait-for-review)
+3. [Hacktoberfest Participation](#hacktoberfest-participation)
+4. [Contribution Guidelines](#contribution-guidelines)
+5. [Contributors](#contributors)
+6. [License](#license)
+7. [Get Involved](#get-involved)
+
+## Hacktoberfest 2024: Beginner Coding Problems and Solutions
 
 Welcome to the **Hacktoberfest 2024** beginner coding problems repository! This project is designed to help beginners contribute to open-source while practicing fundamental coding skills. Whether you're new to programming or an experienced developer looking to assist, we’re excited to have you here!
 
@@ -74,13 +107,27 @@ Please follow these contribution guidelines to maintain quality and consistency:
 - **Respect the project structure**: Keep files organized and follow the existing naming conventions.
 - **Be respectful and constructive**: Engage with other contributors positively, whether reviewing pull requests or participating in discussions.
 
----
+## Contributors
+
+A heartfelt thank you to the following individuals for their valuable contributions to this project. Your support and dedication are greatly appreciated:
+
+<a href="https://github.com/Prem-Kumar-Dev/hacktoberfest2024/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Prem-Kumar-Dev/hacktoberfest2024" />
+</a>
+
+<br>
 
 ## License
 
 This project is licensed under the **MIT License**.
 
 ---
+
+<div align="center">
+    <a href="#top">
+        <img src="https://img.shields.io/badge/Back%20to%20Top-000000?style=for-the-badge&logo=github&logoColor=white" alt="Back to Top">
+    </a>
+</div>
 
 ## Get Involved
 
@@ -92,3 +139,5 @@ Happy coding and contributing to **Hacktoberfest 2024**!
 
 ![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2024-blueviolet?style=flat&logo=hacktoberfest)
 ```
+
+
