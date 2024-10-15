@@ -1,4 +1,4 @@
-ublic class StringPrograms {
+public class StringPrograms {
 
 	public static void main(String[] args) {
 		String str = "HelloWorld";
