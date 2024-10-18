@@ -1,5 +1,6 @@
 // Selection Sort
 import java.util.Arrays;
+import java.util.Scanner;
 
 class GfG {
 
@@ -27,8 +28,14 @@ class GfG {
     }
   
     public static void main(String[] args){
-        int[] arr = { 64, 25, 12, 22, 11 };
-
+        Scanner sc = new Scanner(System.in);
+        print("Enter the size of the array:");
+        int n = sc.nextInt();
+        int arr[]= new int[n];
+        print("Enter the elements of the array:");
+        for (int i : n) {
+            arr[i]=sc.nextInt();
+        }
         System.out.print("Original array: ");
         printArray(arr);
 
