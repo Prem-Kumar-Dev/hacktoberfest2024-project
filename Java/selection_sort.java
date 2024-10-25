@@ -1,47 +1,51 @@
-// Selection Sort
-import java.util.Arrays;
 import java.util.Scanner;
 
-class GfG {
+public class Selection_Sort {
 
-    static void selectionSort(int[] arr){
-        int n = arr.length;
-        for (int i = 0; i < n - 1; i++) {
-            int min_idx = i;
+    public static int[] arrInput(Scanner sc) {
+        System.out.print("Enter the size of the array: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements of the array: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        return arr;
+    }
 
-            for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[min_idx]) {
-                    min_idx = j;
+    public static void selectionSort(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
                 }
             }
-            int temp = arr[i];
-            arr[i] = arr[min_idx];
-            arr[min_idx] = temp;           
+            int temp = arr[minIndex];
+            arr[minIndex] = arr[i];
+            arr[i] = temp;
         }
     }
 
-    static void printArray(int[] arr){
-        for (int val : arr) {
-            System.out.print(val + " ");
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int[] arr = arrInput(sc);
+        
+        System.out.print("Array before sorting: ");
+        for (int num : arr) {
+            System.out.print(num + " ");
         }
         System.out.println();
-    }
-  
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        print("Enter the size of the array:");
-        int n = sc.nextInt();
-        int arr[]= new int[n];
-        print("Enter the elements of the array:");
-        for (int i : n) {
-            arr[i]=sc.nextInt();
-        }
-        System.out.print("Original array: ");
-        printArray(arr);
-
+        
         selectionSort(arr);
-
-        System.out.print("Sorted array: ");
-        printArray(arr);
+        
+        System.out.print("Array after sorting: ");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+        
+        sc.close();
     }
 }
