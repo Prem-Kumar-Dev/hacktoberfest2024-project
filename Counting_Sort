@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+void countingSort(int arr[], int size) {
+    // Find the maximum element in the array
+    int max = arr[0];
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    // Initialize count array with all zeros
+    int count[max + 1];
+    for (int i = 0; i <= max; i++) {
+        count[i] = 0;
+    }
+
+    // Store the count of each element in count array
+    for (int i = 0; i < size; i++) {
+        count[arr[i]]++;
+    }
+
+    // Sort the elements by updating the original array
+    int index = 0;
+    for (int i = 0; i <= max; i++) {
+        while (count[i] > 0) {
+            arr[index++] = i;
+            count[i]--;
+        }
+    }
+}
+
+// Helper function to print the array
+void printArray(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+int main() {
+    int arr[] = {4, 2, 2, 8, 3, 3, 1};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array:\n");
+    printArray(arr, size);
+
+    countingSort(arr, size);
+
+    printf("Sorted array:\n");
+    printArray(arr, size);
+
+    return 0;
+}
