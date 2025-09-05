@@ -1,15 +1,9 @@
 // Java program to implement cycle sort
-
-import java.util.*;
-import java.lang.*;
-
 class CycleSort
 {
 // Function sort the array using Cycle sort
 	public static void cycleSort (int arr[], int n)
 	{
-		// count number of memory writes
-		int writes = 0;
 
 		// traverse array elements and put it to on
 		// the right place
@@ -39,7 +33,6 @@ class CycleSort
 				int temp = item;
 				item = arr[pos];
 				arr[pos] = temp;
-				writes++;
 			}
 
 			// Rotate rest of the cycle
@@ -62,9 +55,9 @@ class CycleSort
 					int temp = item;
 					item = arr[pos];
 					arr[pos] = temp;
-					writes++;
 				}
 			}
+
 		}
 	}
 

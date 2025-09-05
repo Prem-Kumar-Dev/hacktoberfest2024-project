@@ -1,4 +1,4 @@
-public class StringPrograms {
+public class StringReve {
 
 	public static void main(String[] args) {
 		String str = "HelloWorld";

@@ -27,6 +27,7 @@ public class Matrix_Multiplication {
         if (cols1 != rows2) {
        // If Number of Columns of first Matrix is not equal to Number of Rows of second Matrix , then Multiplication is not possible.
             System.out.println("Matrix multiplication not possible.");
+            sc.close();
             return ;
         }
 
